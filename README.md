@@ -9,5 +9,6 @@ Future Plans
 ------------
 
 -  I'm going to add in-page navigation links to help move to lower sections for the lower screen sizes.
--  I need to add a dedicated print stylesheet or media query. The current one works, but I'd like to duplicate the look of the largest screen version.
--  I tried to keep requests down, but I could probably squeeze things down even further.
+-  I need to add a dedicated print stylesheet or media query. The current is more or less functional, but I'd like to duplicate the look of the largest screen version.
+-  I tried to keep requests down, but I could probably make things more performant and squeeze things down even further.
+-  Run this through more IE VMs than I have access to at home.
