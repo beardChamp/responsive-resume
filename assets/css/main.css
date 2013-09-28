@@ -398,9 +398,9 @@ li p, .skillset {
     background-size: 1.3em 1em;
     border: 0;
     display: block;
-    float: left;
+    float: right;
     height: 2.25em;
-    margin: 0.75em 0 0 1.2em;
+    margin: 0.75em 0.5em 0 0;
     outline: none;
     overflow: hidden;
     padding: 0;
@@ -437,61 +437,6 @@ li p, .skillset {
     display: none;
 }
 
-#nav .block-title {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-#nav .block {
-    background: #333333;
-    position: relative;
-    padding: 0.75em 1.25em;
-    z-index: 2;
-}
-
-#nav ul {
-    display: block;
-    *zoom: 1;
-}
-
-#nav ul:before, #nav ul:after {
-    content: "";
-    display: table;
-}
-
-#nav ul:after {
-    clear: both;
-}
-
-#nav li {
-    display: block;
-}
-
-#nav li a {
-
-    color: #ccc;
-    display: block;
-    font-size: 0.875em;
-    font-weight: bold;
-    line-height: 1.28571em;
-    outline: none;
-}
-
-#nav li a:focus, #nav li a:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-#nav li.is-active a {
-    color: #fff;
-}
-
 #top {
     background: #333;
     color: #fff;
@@ -526,7 +471,7 @@ footer[role="contentinfo"] {
 }
 
 /* larger screens */
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 49em) {
     #branding {
         float: left;
     }
@@ -552,33 +497,9 @@ footer[role="contentinfo"] {
         width: 1px;
     }
 
-    #nav .block-title {
-        border: 0;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-    }
-
-    #nav ul {
-        text-align: center;
-        white-space: nowrap;
-    }
-
-    #nav li {
-        display: inline-block;
-        border-right: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    #nav li:last-child {
-        border-right: none;
-    }
-
-    #nav li a {
-        padding: 0.42857em 0.85714em;
+    #nav address {
+        margin-top: 4.7em;
+        line-height: 1.5em;
     }
 
     #nav .email, #nav .url {
@@ -650,6 +571,10 @@ footer[role="contentinfo"] {
     }
 }
 @media screen and (min-width: 64em) {
+    #nav address {
+        margin-top: 2em;
+        line-height: 1.5em;
+    }
     #nav .email, #nav .url {
         font-size: 1em;
     }
@@ -679,7 +604,7 @@ footer[role="contentinfo"] {
 }
 
 /* smaller screens */
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 49em) {
     #branding h1 {
         float: left;
     }
@@ -863,5 +788,155 @@ footer[role="contentinfo"] {
 
     h4 span {
         display: block;
+    }
+}
+
+@media print {
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-size: .75em;
+    }
+    #branding, #content {
+        width: 71%;
+    }
+
+    #branding {
+        float: left;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    #nav {
+        float: right;
+        padding: 2%;
+        width: 17%;
+    }
+
+    #nav .close-btn {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    #nav .block-title {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    #nav ul {
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    #nav li {
+        display: inline-block;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    #nav li:last-child {
+        border-right: none;
+    }
+
+    #nav li a {
+        padding: 0.42857em 0.85714em;
+    }
+
+    #nav .email, #nav .url {
+        font-size: .8em;
+    }
+
+    #branding, #content {
+        float: left;
+        width: 73%;
+    }
+
+    h3 {
+        margin-bottom: 1.25em;
+    }
+
+    h3 {
+        float: left;
+        width: 9%;
+        margin-right: 2%;
+    }
+
+    h3 .type {
+        display: block;
+    }
+
+    #full-time,
+    #freelance,
+    #speaking,
+    #skills,
+    #education {
+        float: left;
+        width: 88%;
+    }
+
+    .vevent,
+    .skillset {
+        float: left;
+        margin-bottom: .5em;
+        width: 100%;
+    }
+
+    .vevent h4,
+    .skillset h4 {
+        float: left;
+        margin-right: 2%;
+        min-height: 4em;
+        width: 21%;
+    }
+
+    h4 span {
+        display: block;
+    }
+
+    .vevent p,
+    .skillset p {
+        float: left;
+        width: 77%;
+    }
+
+    .vevent p + p,
+    .skillset p + p {
+        margin-left: 23%;
+    }
+
+    #full-time .org,
+    #freelance .org,
+    #full-time .date_duration,
+    #freelance .date_duration {
+        font-family: 'RobotoCondensed',helvetica,arial,sans-serif;
+        font-size: 0.77em;
+        font-weight: normal;
+        line-height: 1.3em;
+        margin-top: 0.25em;
+    }
+
+    #full-time .date_duration,
+    #freelance .date_duration {
+        font-size: 0.65em;
+    }
+
+
+    #nav .email, #nav .url {
+        font-size: 1em;
     }
 }
