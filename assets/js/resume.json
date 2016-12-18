@@ -1,0 +1,408 @@
+{
+  "basics": {
+    "name": "Timothy J. McElwee",
+    "label": "Lead Front End Engineer at Healthicity",
+    "phone": "",
+    "website": "",
+    "summary": "I'm a front-end developer. I love taking designs from conception to completed, usable code. I like making it work and finding new ways to make it work, even when I feel like I've coded myself into a corner. There has to be a way out, right?\n\nLately I've been bitten by the mobile web bug. It reminds me of the wild west browser frontier of 2000, except I get to confidently play with cutting edge features as part of the progressive enhancement.\n\nSpecialties: CSS3, HTML5, XHTML, jQuery, javascript, mobile web, website performance, and accessibility",
+    "location": {
+      "address": "10668 S Monica Ridge Way, Apt W1",
+      "postalCode": "UT 84095",
+      "city": "South Jordan",
+      "countryCode": "",
+      "region": ""
+    },
+    "profiles": []
+  },
+  "work": [
+    {
+      "company": "Healthicity",
+      "position": "Lead Engineer",
+      "website": "",
+      "startDate": "2016-10-01",
+      "summary": "I'm working to bring best practices to Healthicity's products by building a centralized, JavaScript platform for maximum reuse of components. To support this, I'm collaborating with design to convert and extend our design system. Additionally, I'm working on other visualization initiatives to help our clients gain further insights from their data.",
+      "highlights": []
+    },
+    {
+      "company": "AdvancedMD",
+      "position": "Senior UX Developer",
+      "website": "",
+      "startDate": "2015-08-01",
+      "summary": "I've been working to help revamp the look and feel of AdvancedMDs practice management and electronic health records applications. I've been building proofs of concept in AngularJS to ascertain viability of UX ideas. I've also been acting as a central resource for managing common SCSS/CSS libraries used across the organization.",
+      "highlights": [],
+      "endDate": "2016-09-01"
+    },
+    {
+      "company": "ADP",
+      "position": "Senior Application Developer @ ADP Innovation Lab",
+      "website": "",
+      "startDate": "2013-11-01",
+      "summary": "I've been building demos and proof-of-concepts in conjunction with our UX team to define the direction of our products. I helped build out a custom backbone.js app to create a modular, responsive framework for projects to flesh out ideas like our Visual Design Language and the first round of ideas that became the recently released Pay Lens. I've been building data visualizations with D3.js, including integrating a solution for custom SVG label sizing and concatenation into a production Angular app. I've also been working with Node.js to produce a lightweight JSON api endpoint for other data visualiztion projects. Lastly, I've been working with Grunt and Gulp to improve and automate build processes, like compiling SCSS files and setting watches. I also helped develop a Meteor front end for a micro-services platform.",
+      "highlights": [],
+      "endDate": "2015-07-01"
+    },
+    {
+      "company": "WhoSay, Inc.",
+      "position": "Front-End Software Developer",
+      "website": "",
+      "startDate": "2013-01-01",
+      "summary": "Focusing mostly on Javascript programming using the YUI Application Framework, I've added interaction and on-demand content loading across our four client facing applications (web for fans, mobile web for fans, client manager, and system admin). This includes major rewrites of the manager, admin, and web fan apps where I worked on several areas including adding new editorial content types in admin and creating mobile content previews through a web-based recreation of our iOS fan app. Additionally, I've worked to modify our web fan app to be fully responsive, allowing better continuity with our email marketing initiatives and the removal of our previous mobile web project.",
+      "highlights": [],
+      "endDate": "2013-11-01"
+    },
+    {
+      "company": "DOOR3 Business Applications, Inc.",
+      "position": "Senior Frontend Developer",
+      "website": "",
+      "startDate": "2012-09-01",
+      "summary": "While at DOOR3, I've worked on the DOOR3 website, implementing design changes for our responsive (and adaptive) update using CSS3 and Drupal features. I've also added SVG-based icons to help reduce our http load and written an article on the benefits of using jQuery Mobile for rapid development. (http://door3.com/insights/rapid-development-jquery-mobile).",
+      "highlights": [],
+      "endDate": "2013-01-01"
+    },
+    {
+      "company": "SelectMinds",
+      "position": "Senior UX Developer",
+      "website": "",
+      "startDate": "2011-05-01",
+      "summary": "As lead developer on the Community Connect social networking platform, I incorporated the latest best practices and improved the user experience. We converted a number of user flows to AJAX, so that multi-step processes became single-page or even single-element specific. We updated our analytics section to better show administrators the data that was truly useful to them. \n\nWhile at SelectMinds, I was also the lead front-end developer on our mobile web initiative. The Community Connect product was already a hosted, web application. It made perfect sense, with this core knowledge and the importance of email marketing to our customers, to create a mobile web app leveraging jQuery Mobile. This let us make an app that catered to iPhone and Android users (Google was a client, so Android support was paramount) while maintaining access for more recent Blackberries and similarly capable phone browsers.",
+      "highlights": [],
+      "endDate": "2012-09-01"
+    },
+    {
+      "company": "Comcast Interactive Media",
+      "position": "Web Developer",
+      "website": "",
+      "startDate": "2009-04-01",
+      "summary": "If it's front-end related on a Comcast.net or Xfinity.com property, I've probably touched it. I was lead developer on search for eight months. I've worked on our mobile websites and webapps. I've helped reskin Comcast.net. I've tested asynchronous javascript loading on the Comcast.net homepage to see if we can get faster rendering. I helped write the UI for our new CMS initiative. I worked on several modules on Xfinity.com. I also built an integration of remote DVR features into the search engine, presenting users with customized listings and recording options if they searched for a term that matched a known show. This was further developed as a standalone mobile web app, to make it all about searching for and recording shows.",
+      "highlights": [],
+      "endDate": "2011-05-01"
+    },
+    {
+      "company": "MRM Worldwide",
+      "position": "Freelance Web Developer",
+      "website": "",
+      "startDate": "2009-03-01",
+      "summary": "Worked on an interactive single page microsite/section landing page for Intel",
+      "highlights": [],
+      "endDate": "2009-04-01"
+    },
+    {
+      "company": "Wunderman",
+      "position": "Interface Engineer",
+      "website": "",
+      "startDate": "2007-05-01",
+      "summary": "Advertising development of all sorts -- websites, landing pages, emails, etc -- in a .Net environment, using standards-based principles and jQuery to for top-notch UI.",
+      "highlights": [],
+      "endDate": "2009-02-01"
+    },
+    {
+      "company": "SelectMinds",
+      "position": "Web Developer",
+      "website": "",
+      "startDate": "2005-09-01",
+      "summary": "Customized, and maintained JSP driven social networking sites for professional services and Fortune 500 clients with total populations over 400,000 users. Designed SelectMinds website, from concepts to implementation, for a new brand launch. Created product and process documentation improving new employee learning curve. Clients included Schlumberger, Accenture, Lockheed Martin, BearingPoint, Bear Stearns, Latham & Watkins, DLA Piper, and Orrick, Herrington & Sutcliffe.",
+      "highlights": [],
+      "endDate": "2007-04-01"
+    },
+    {
+      "company": "Vanderbilt University",
+      "position": "CSS Consultant",
+      "website": "",
+      "startDate": "2004-09-01",
+      "summary": "Created style sheet and markup for Vanderbilt University’s first CSS based site. Created HTML structure of top-, secondary-, and tertiary-level pages. Ensured cross browser compatibility and graceful degradation in older browsers. Created a single cascading style sheet for the Peabody College website and its department sites. Worked with Web Team to ensure proper HTML output from custom CMS.",
+      "highlights": [],
+      "endDate": "2006-04-01"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Allegan High School",
+      "area": "College Prep",
+      "studyType": "Diploma",
+      "startDate": "1993-08-30",
+      "gpa": "",
+      "courses": [],
+      "endDate": "1997-06-06"
+    },
+    {
+      "institution": "Grand Valley State University",
+      "area": "History and Sociology",
+      "studyType": "Bachelor's of Science",
+      "startDate": "1997-08-25",
+      "gpa": "3.63",
+      "courses": [],
+      "endDate": "2001-05-02"
+    }
+  ],
+  "skills": [
+    {
+      "name": "PHP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Drupal",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Wordpress",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Freemarker",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "AJAX",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Usability",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Mobile",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Apache",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "XML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Android",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "XHTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "LAMP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Standards",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Information Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Mobile Applications",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Front-end Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JSON",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cross-browser Compatibility",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Subversion",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "jQuery Mobile",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "jQuery",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Advanced CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML5",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CSS3",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Accessibility",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "YUI",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Handlebars",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML + CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CMS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Interface",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Image Optimization",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Mobile Internet",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Social Networking",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Photoshop",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Interface Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Experience",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Mac OS X",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Eclipse",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User-centered Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Applications",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile Methodologies",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Front-end",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML 5",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "interests": [
+    {
+      "name": "graphic design",
+      "keywords": []
+    },
+    {
+      "name": " typography",
+      "keywords": []
+    },
+    {
+      "name": " history",
+      "keywords": []
+    },
+    {
+      "name": " reading sci-fi",
+      "keywords": []
+    }
+  ],
+  "references": []
+}
