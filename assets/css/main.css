@@ -10,33 +10,24 @@
 
 @font-face {
     font-family: 'LeagueGothicRegular';
-    src: url('../type/League_Gothic-webfont.eot');
-    src: url('../type/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/League_Gothic-webfont.woff') format('woff'),
-         url('../type/League_Gothic-webfont.ttf') format('truetype'),
-         url('../type/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    src: url('../type/League_Gothic-webfont.woff') format('woff'),
+         url('../type/League_Gothic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'RobotoCondensed';
-    src: url('../type/Roboto-Condensed-webfont.eot');
-    src: url('../type/Roboto-Condensed-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/Roboto-Condensed-webfont.woff') format('woff'),
-         url('../type/Roboto-Condensed-webfont.ttf') format('truetype'),
-         url('../type/Roboto-Condensed-webfont.svg#RobotoCondensed') format('svg');
+    src: url('../type/Roboto-Condensed-webfont.woff') format('woff'),
+         url('../type/Roboto-Condensed-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'RobotoBoldCondensed';
-    src: url('../type/Roboto-BoldCondensed-webfont.eot');
-    src: url('../type/Roboto-BoldCondensed-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../type/Roboto-BoldCondensed-webfont.woff') format('woff'),
-         url('../type/Roboto-BoldCondensed-webfont.ttf') format('truetype'),
-         url('../type/Roboto-BoldCondensed-webfont.svg#RobotoBoldCondensed') format('svg');
+    src: url('../type/Roboto-BoldCondensed-webfont.woff') format('woff'),
+         url('../type/Roboto-BoldCondensed-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -250,10 +241,6 @@ a {
 
 body {
     background-color: #fff;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
     box-sizing: border-box;
     color: #333;
     font: normal 1.3em/1.6 'RobotoCondensed',helvetica,arial,sans-serif;
@@ -307,6 +294,9 @@ address {
     float: left;
     width: 100%;
 }
+#name .full {
+    color: #666;
+}
 
 #contact {
     clear: left;
@@ -316,6 +306,10 @@ address {
     display: block;
     text-decoration: none;
     color: #333;
+}
+
+#contact h2 {
+    text-indent: -9999px;
 }
 
 #content {
@@ -379,8 +373,7 @@ li p, .skillset {
     padding: 0;
     text-indent: 100%;
     white-space: nowrap;
-    width: 2.625em;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    width: 2em;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -389,7 +382,6 @@ li p, .skillset {
 }
 
 .close-btn:focus, .close-btn:hover {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
 }
 
@@ -398,9 +390,9 @@ li p, .skillset {
     background-size: 1.3em 1em;
     border: 0;
     display: block;
-    float: right;
+    float: left;
     height: 2.25em;
-    margin: 0.75em 0.5em 0 0;
+    margin: 0.75em 0 0 1.2em;
     outline: none;
     overflow: hidden;
     padding: 0;
@@ -415,6 +407,7 @@ li p, .skillset {
 }
 
 #outer-wrap {
+    overflow: hidden;
     position: relative;
     width: 100%;
 }
@@ -438,6 +431,60 @@ li p, .skillset {
 
 #nav .close-btn {
     display: none;
+}
+
+#nav .block-title {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+#nav .block {
+    background: #333333;
+    position: relative;
+    padding: 0.75em 1.25em;
+    z-index: 2;
+}
+
+#nav ul {
+    display: block;
+    *zoom: 1;
+}
+
+#nav ul:before, #nav ul:after {
+    content: "";
+    display: table;
+}
+
+#nav ul:after {
+    clear: both;
+}
+
+#nav li {
+    display: block;
+}
+
+#nav li a {
+    color: #ccc;
+    display: block;
+    font-size: 0.875em;
+    font-weight: bold;
+    line-height: 1.28571em;
+    outline: none;
+}
+
+#nav li a:focus, #nav li a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#nav li.is-active a {
+    color: #fff;
 }
 
 #top {
@@ -474,19 +521,18 @@ footer[role="contentinfo"] {
 }
 
 /* larger screens */
-@media screen and (min-width: 49em) {
+@media screen and (min-width: 48em) {
     #branding {
         float: left;
     }
 
-    .nav-btn,
-    #sections {
+    .nav-btn {
         display: none;
     }
 
     #nav {
         float: right;
-        padding: 2%;
+        padding: 1.25em 2% 2%;
         width: 21%;
     }
 
@@ -501,9 +547,37 @@ footer[role="contentinfo"] {
         width: 1px;
     }
 
-    #nav address {
-        margin-top: 4.7em;
-        line-height: 1.5em;
+    #nav .block-title {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    #nav ul {
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    #nav li {
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        display: inline-block;
+    }
+
+    #nav li:last-child {
+        border-right: none;
+    }
+
+    #nav li a {
+        padding: 0.42857em 0.85714em;
+    }
+
+    #contact h2 {
+        background: url("../images/logo-sans.svg") no-repeat -11px 3px / 52px;
     }
 
     #nav .email, #nav .url {
@@ -519,11 +593,11 @@ footer[role="contentinfo"] {
         margin-bottom: 1.25em;
     }
 
-    #full-time ul,
-    #freelance ul,
-    #speaking ul,
-    #skills > ul,
-    #education ul {
+    #full-time,
+    #freelance,
+    #speaking,
+    #skills,
+    #education {
         float: left;
         width: 100%;
     }
@@ -548,8 +622,7 @@ footer[role="contentinfo"] {
     }
 
     .vevent p,
-    .skillset p,
-    .skillset li ul {
+    .skillset p {
         float: left;
         width: 77%;
     }
@@ -576,10 +649,6 @@ footer[role="contentinfo"] {
     }
 }
 @media screen and (min-width: 64em) {
-    #nav address {
-        margin-top: 2em;
-        line-height: 1.5em;
-    }
     #nav .email, #nav .url {
         font-size: 1em;
     }
@@ -598,18 +667,18 @@ footer[role="contentinfo"] {
         display: block;
     }
 
-    #full-time ul,
-    #freelance ul,
-    #speaking ul,
-    #skills > ul,
-    #education ul {
+    #full-time,
+    #freelance,
+    #speaking,
+    #skills,
+    #education {
         width: 88%;
     }
 
 }
 
 /* smaller screens */
-@media screen and (max-width: 49em) {
+@media screen and (max-width: 48em) {
     #branding h1 {
         float: left;
     }
@@ -620,7 +689,7 @@ footer[role="contentinfo"] {
 
     #nav {
         color: #fff;
-        padding-top: 4em;
+        padding-top: 1.44em;
         position: absolute;
         top: 0;
     }
@@ -635,9 +704,9 @@ footer[role="contentinfo"] {
     }
 
     #nav .close-btn {
-        left: 0.5em;
+        right: 0;
         position: absolute;
-        top: 0.5em;
+        top: 0.65em;
     }
 
     #nav .block {
@@ -668,8 +737,7 @@ footer[role="contentinfo"] {
     }
 
     #nav li a {
-        padding: 0.5em;
-        color: #fff;
+        padding: 0.85714em 2.14286em;
     }
 
     #nav #contact, #nav #contact a {
@@ -677,14 +745,15 @@ footer[role="contentinfo"] {
     }
 
     #nav #contact {
-        margin-bottom: 1.25em;
         padding: 0 0.5em;
+    }
+
+    #contact h2 {
+        background: url("../images/logo-sans-white.svg") no-repeat -1px 4px / 43px;
     }
 
     .js-ready #nav {
         background: #333;
-        -webkit-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
-        -moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
         box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
         height: 100%;
         width: 70%;
@@ -696,12 +765,10 @@ footer[role="contentinfo"] {
 
     .js-ready #nav .close-btn {
         display: block;
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
         opacity: 0.7;
     }
 
     .js-ready #nav .close-btn:focus, .js-ready #nav .close-btn:hover {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
     }
 
@@ -719,71 +786,31 @@ footer[role="contentinfo"] {
 
     .csstransforms3d.csstransitions.js-ready #nav {
         right: 0;
-        -webkit-transform: translate3d(100%, 0, 0);
-        -moz-transform: translate3d(100%, 0, 0);
-        -ms-transform: translate3d(100%, 0, 0);
-        -o-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0);
-        -webkit-backface-visibility: hidden;
-        -moz-backface-visibility: hidden;
-        -ms-backface-visibility: hidden;
-        -o-backface-visibility: hidden;
         backface-visibility: hidden;
     }
 
     .csstransforms3d.csstransitions.js-ready #inner-wrap {
         left: 0 !important;
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
-        -webkit-transition: -webkit-transform 500ms ease;
-        -moz-transition: -moz-transform 500ms ease;
-        -o-transition: -o-transform 500ms ease;
         transition: transform 500ms ease;
-        -webkit-backface-visibility: hidden;
-        -moz-backface-visibility: hidden;
-        -ms-backface-visibility: hidden;
-        -o-backface-visibility: hidden;
         backface-visibility: hidden;
     }
 
     .csstransforms3d.csstransitions.js-nav #inner-wrap {
-        -webkit-transform: translate3d(-70%, 0, 0) scale3d(1, 1, 1);
-        -moz-transform: translate3d(-70%, 0, 0) scale3d(1, 1, 1);
-        -ms-transform: translate3d(-70%, 0, 0) scale3d(1, 1, 1);
-        -o-transform: translate3d(-70%, 0, 0) scale3d(1, 1, 1);
         transform: translate3d(-70%, 0, 0) scale3d(1, 1, 1);
     }
 
     .csstransforms3d.csstransitions.js-ready #nav .block {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
         opacity: 0.7;
-        -webkit-transition: opacity 300ms 100ms, -webkit-transform 500ms ease;
         -webkit-transition-delay: ease, 0s;
-        -moz-transition: opacity 300ms 100ms ease, -moz-transform 500ms ease;
-        -o-transition: opacity 300ms 100ms ease, -o-transform 500ms ease;
         transition: opacity 300ms 100ms ease, transform 500ms ease;
-        -webkit-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
-        -moz-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
-        -ms-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
-        -o-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
         transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
-        -webkit-transform-origin: 50% 0%;
-        -moz-transform-origin: 50% 0%;
-        -ms-transform-origin: 50% 0%;
-        -o-transform-origin: 50% 0%;
         transform-origin: 50% 0%;
     }
 
     .csstransforms3d.csstransitions.js-nav #nav .block {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     };
 }
@@ -799,158 +826,35 @@ footer[role="contentinfo"] {
 }
 
 @media print {
-    html, body {
-        margin: 0;
-        padding: 0;
+    @page {
+        size: auto;
+        margin: 0.5in;
     }
+
     body {
-        font-size: .65em;
+        font-size: 1em;
     }
+
     #branding, #content {
+        float: left;
         width: 71%;
     }
 
-    #branding {
-        float: left;
-    }
-
-    .nav-btn,
-    #sections {
+    .nav-btn {
         display: none;
     }
 
     #nav {
         float: right;
-        padding: 2%;
-        width: 17%;
-    }
-
-    #nav .close-btn {
-        border: 0;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-    }
-
-    #nav .block-title {
-        border: 0;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-    }
-
-    #nav address {
-        margin-top: 2em;
-        line-height: 1.5em;
-    }
-
-    #nav ul {
-        text-align: center;
-        white-space: nowrap;
-    }
-
-    #nav li {
-        display: inline-block;
-        border-right: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    #nav li:last-child {
-        border-right: none;
-    }
-
-    #nav li a {
-        padding: 0.42857em 0.85714em;
-    }
-
-    #nav .email, #nav .url {
-        font-size: .8em;
-    }
-
-    #branding, #content {
-        float: left;
-        width: 73%;
-    }
-
-    h3 {
-        margin-bottom: 1.25em;
-    }
-
-    h3 {
-        float: left;
-        width: 9%;
-        margin-right: 2%;
-    }
-
-    h3 .type {
-        display: block;
-    }
-
-    #full-time ul,
-    #freelance ul,
-    #speaking ul,
-    #skills > ul,
-    #education ul {
-        float: left;
-        width: 88%;
-    }
-
-    .vevent,
-    .skillset {
-        float: left;
-        margin-bottom: .5em;
-        width: 100%;
-    }
-
-    .vevent h4,
-    .skillset h4 {
-        float: left;
-        margin-right: 2%;
-        min-height: 4em;
+        padding: 1.25em 2% 2%;
         width: 21%;
     }
 
-    h4 span {
-        display: block;
+    li p {
+        font-size: 0.85em;
     }
-
-    .vevent p,
-    .skillset p,
-    .skillset li ul {
-        float: left;
-        width: 77%;
-    }
-
-    .vevent p + p,
-    .skillset p + p {
-        margin-left: 23%;
-    }
-
-    #full-time .org,
-    #freelance .org,
-    #full-time .date_duration,
-    #freelance .date_duration {
-        font-family: 'RobotoCondensed',helvetica,arial,sans-serif;
-        font-size: 0.77em;
-        font-weight: normal;
-        line-height: 1.3em;
-        margin-top: 0.25em;
-    }
-
-    #full-time .date_duration,
-    #freelance .date_duration {
-        font-size: 0.65em;
-    }
-
-
-    #nav .email, #nav .url {
-        font-size: 1em;
+    
+    #contact address {
+        font-size: 0.75em;
     }
 }
