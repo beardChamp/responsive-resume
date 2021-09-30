@@ -103,12 +103,6 @@
                     app.closeNav();
                 }
             }, true);
-            // close the nav when clicking on smallest width nav links
-            document.getElementById('sections').addEventListener('click', function(e) {
-                if (nav_open) {
-                    app.closeNav();
-                }
-            }, true);
             addClass(doc, 'js-ready');
         };
         return app;
